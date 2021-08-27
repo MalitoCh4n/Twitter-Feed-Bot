@@ -41,12 +41,12 @@ jobs:
         on:
           all_branches: true
           repo: NNTin/discord-twitter-bot
-#    - stage: docker
-#      python: 3.6.6
-#      env:
-#      - secure: "Nwp138sYrukAR02hMCOMfKpvhRbPQbR7F91dmd6UPErFw23N0GMCTlz6c+qUuX8uNPum3yQQhZwFkggKBH2CCji62XAL3GtPr0o0evqlAi0jTHI60OvhTilgwFTc09Yt4NE7+HOWRZr+VKkOyAt1NwkqKHj1Cw5hnvnZUfSoqwZAfe/kZX4PCpDf6dhMvAvSZtrOg5A9IryWsTPQNPgO1C3kWNN1R40hF3idf2v7vNIFY2erRNRGDDAWwsJC/EG4k+wc8CgdS9LZU58RZAcNUKPsk2xix5SYBD2eMp2F2xouELhKGGDcrvuXgMC3QtoZfNxk2uQUvFroqfLMpI/tTiIj3GWbBq6nuzrorPhFw/IipVF4IaJHtU0rxA/SdsRR5CPjyX2RDIFq4WiQ+MhWJWQeBihFRg99dhdnlG04Qq0ct4h1ue/Ck0fzIRDqtoHdfmC7mNtL8O49YpDnWuXjdgytwYeylSLNvC0scFbhmeTo4gJVrvEq5CHTnsrHcZJQzfagSgh+EBBDOiFAt9AVLjRerfP3bpC/dPdGsW+HnYXDhIISIfBTR4T3pr/yE7v2cbICA3F4R9kU5S9OzyNO4PVVKP1ca66HgB31UjwxbQLb4NldYK7FxwRmjvsv8vmkILb7QkfJZV/hlen8NQF/wx2VfTwzLnIPDwKvNRzGkBw="
-#      before_script:
-#      - docker pull "$DOCKER_IMAGE_NAME" || true
+    - stage: docker
+      python: 3.6.6
+      env:
+      - secure: "Nwp138sYrukAR02hMCOMfKpvhRbPQbR7F91dmd6UPErFw23N0GMCTlz6c+qUuX8uNPum3yQQhZwFkggKBH2CCji62XAL3GtPr0o0evqlAi0jTHI60OvhTilgwFTc09Yt4NE7+HOWRZr+VKkOyAt1NwkqKHj1Cw5hnvnZUfSoqwZAfe/kZX4PCpDf6dhMvAvSZtrOg5A9IryWsTPQNPgO1C3kWNN1R40hF3idf2v7vNIFY2erRNRGDDAWwsJC/EG4k+wc8CgdS9LZU58RZAcNUKPsk2xix5SYBD2eMp2F2xouELhKGGDcrvuXgMC3QtoZfNxk2uQUvFroqfLMpI/tTiIj3GWbBq6nuzrorPhFw/IipVF4IaJHtU0rxA/SdsRR5CPjyX2RDIFq4WiQ+MhWJWQeBihFRg99dhdnlG04Qq0ct4h1ue/Ck0fzIRDqtoHdfmC7mNtL8O49YpDnWuXjdgytwYeylSLNvC0scFbhmeTo4gJVrvEq5CHTnsrHcZJQzfagSgh+EBBDOiFAt9AVLjRerfP3bpC/dPdGsW+HnYXDhIISIfBTR4T3pr/yE7v2cbICA3F4R9kU5S9OzyNO4PVVKP1ca66HgB31UjwxbQLb4NldYK7FxwRmjvsv8vmkILb7QkfJZV/hlen8NQF/wx2VfTwzLnIPDwKvNRzGkBw="
+      before_script:
+      - docker pull "$DOCKER_IMAGE_NAME" || true
 #      script:
 #      - docker build --pull --cache-from "$DOCKER_IMAGE_NAME" -t temp-image .
 #      after_script:
