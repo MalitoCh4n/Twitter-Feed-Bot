@@ -1,4 +1,4 @@
-<h1 align="center">discord-twitter-bot</h1>
+<h1 align="center">Twitter Feed Bot</h1>
 <p align="center">Posts Twitter Tweets to Discord through Webhook</p>
 
 # About
